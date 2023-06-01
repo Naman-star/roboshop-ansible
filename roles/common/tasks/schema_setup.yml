@@ -22,6 +22,7 @@
 #    func_stat_check $?
 #    fi
 #  }
+
 - name: Load mongodb schema
   when: schema_setup == "mongodb"
   block:
