@@ -26,7 +26,7 @@
     name: nodejs
     state: installed
 
-- name: Include task list in play
+- name: Include app_prereq
   ansible.builtin.import_tasks:
     file: app_prereq.yml
 
