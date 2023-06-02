@@ -12,7 +12,7 @@
 
 - name: Setup systemD Service file
   ansible.builtin.template:
-    src: "{{component}}.service"
+    src: "{{ component }}.service"
     dest: /etc/systemd/system/{{component}}.service
 
 - name: Start {{ component }} service
