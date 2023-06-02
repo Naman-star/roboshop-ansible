@@ -1,3 +1,2 @@
-- name: Demo
-  ansible.builtin.debug:
-    msg: Hello
+component: user
+schema_setup: mongo
