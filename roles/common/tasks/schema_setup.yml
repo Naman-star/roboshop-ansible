@@ -25,7 +25,7 @@
 - name: Load mongodb schema
   when: schema_setup == "mongodb"
   block:
-    - name: copy mongodb schema
+    - name: copy mongodb repo
       ansible.builtin.copy:
         src: mongo.repo
         dest: /etc/yum.repos.d/mongo.repo
