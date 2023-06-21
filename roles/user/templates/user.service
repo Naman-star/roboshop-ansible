@@ -8,5 +8,6 @@ Environment=MONGO_URL={{ lookup('aws_ssm', '{{ env }}.user.mongo_url', region='u
 ExecStart=/bin/node /app/server.js
 SyslogIdentifier=user
 
+
 [Install]
 WantedBy=multi-user.target
